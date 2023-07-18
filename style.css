@@ -104,7 +104,7 @@ body {
   display: flex;
   flex-direction: column;
   align-content: center;
-  align-items: flex-start;
+  align-items: center;
 
 }
 
@@ -120,7 +120,17 @@ body {
 #container-list {
   margin-top: 24px;
   min-width: 315px;
-  margin-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
 }
 
 #container-list-inside-reaction {
@@ -130,6 +140,7 @@ body {
   background: var(--red-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55);
   border-radius: 12px;
   align-items: center;
+  justify-content: space-between;
 }
 
 #container-list-inside-memory {
@@ -139,6 +150,7 @@ body {
   background: var(--yellow-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #FFB21E);
   border-radius: 12px;
   align-items: center;
+  justify-content: space-between;
 }
 
 #container-list-inside-verbal {
@@ -148,15 +160,17 @@ body {
   background: var(--green-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00BB8F);
   border-radius: 12px;
   align-items: center;
+  justify-content: space-between;
 }
 
 #container-list-inside-visual {
   display: flex;
   flex-direction: row;
   height: 56px;
-  background: var(--green-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00BB8F);
+  background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125D6);
   border-radius: 12px;
   align-items: center;
+  justify-content: space-between;
 }
 
 
@@ -219,4 +233,39 @@ body {
 
 #list-title-visual {
   margin-right: min(124px);
+}
+
+#button {
+  margin-top: 24px;
+  width: 315px;
+  height: 56px;
+
+  border-radius: 128px;
+  background: var(--dark-navy, #303B59);
+
+  color: var(--white, #FFF);
+  text-align: center;
+
+  /* Body (Bold) */
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.number-score {
+  color: var(--dark-navy, #303B59);
+  text-align: right;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 16px;
+}
+
+.position-index-list {
+  display: flex;
+  flex-direction: row;
 }
