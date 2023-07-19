@@ -269,3 +269,5 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+@media (min-width:1440px) {}
